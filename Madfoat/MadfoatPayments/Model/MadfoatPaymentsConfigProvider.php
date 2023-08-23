@@ -26,7 +26,7 @@ class MadfoatPaymentsConfigProvider implements ConfigProviderInterface
 
     public function getConfig()
     {
-        $savedCards = array();
+        $savedCards = array(); 
 
         if($this->customerSession->isLoggedIn()){
             $customerId = $this->customerSession->getCustomerId();
